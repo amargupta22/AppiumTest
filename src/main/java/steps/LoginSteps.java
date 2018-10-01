@@ -21,7 +21,7 @@ public class LoginSteps {
     AppiumLibrary appiumLibrary = new AppiumLibrary(driver);
     LoginScreen loginScreen = new LoginScreen(driver);
 
-    @When("^User logs in$")
+    @When("^User is logged in$")
     public void login() {
         allowPermissions();
         Reporter.log("Login", true);

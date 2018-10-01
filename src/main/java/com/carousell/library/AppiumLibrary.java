@@ -182,20 +182,20 @@ public class AppiumLibrary {
         try {
             switch (locator) {
                 case TEXT:
-                    by = MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).setMaxSearchSwipes(1000).scrollIntoView(new UiSelector().text(\"" + value + "\"));");
+                    by = MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).setMaxSearchSwipes(5000).scrollIntoView(new UiSelector().text(\"" + value + "\"));");
                     break;
 
                 case ACCESSIBILITY_ID:
-                    by = MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).setMaxSearchSwipes(1000).scrollIntoView(new UiSelector().description(\"" + value + "\"));");
+                    by = MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).setMaxSearchSwipes(5000).scrollIntoView(new UiSelector().description(\"" + value + "\"));");
                     break;
 
                 case CLASSNAME:
-                    by = MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).setMaxSearchSwipes(1000).scrollIntoView(new UiSelector().className(\"" + value + "\").index("
+                    by = MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).setMaxSearchSwipes(5000).scrollIntoView(new UiSelector().className(\"" + value + "\").index("
                             + index + "));");
                     break;
 
                 case RESOURCE_ID:
-                    by = MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).setMaxSearchSwipes(1000).scrollIntoView(new UiSelector().resourceId(\"" + value + "\"));");
+                    by = MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).setMaxSearchSwipes(5000).scrollIntoView(new UiSelector().resourceId(\"" + value + "\"));");
                     break;
 
                 default:

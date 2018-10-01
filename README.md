@@ -74,7 +74,7 @@ mvn -version
 ##### 11. Executing ProductListing.feature
 
 ```bash
-mvn clean test -Dtest=JunitRunner -Dcucumber.options="src/main/resources/features/ --tags @carousell --plugin html:target/site/cucumber-pretty@2.5.1 --plugin json:target/result.json"
+mvn clean test -Dtest=JunitRunner -Dcucumber.options="src/main/resources/features/ --tags @carousell --plugin html:target/site/cucumber-pretty@2.5.1 --plugin json:target/result.json --plugin com.cucumber.listener.ExtentCucumberFormatter:target/report.html"
 ```
 ##### 11. Reports can be found at target/report.html (Open in Browser)
 

@@ -24,7 +24,7 @@ public class AddingProductSteps {
     AddingProductScreen addingProductScreen = new AddingProductScreen(driver);
     static String name;
 
-    @When("^User lists an item$")
+    @When("^User lists an item under Everything Else category$")
     public void list_an_item() {
         Date date = new Date();
         long timeMilli = date.getTime();

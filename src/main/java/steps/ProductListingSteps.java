@@ -26,7 +26,7 @@ public class ProductListingSteps {
     AdbUtility adbUtility = new AdbUtility();
 
 
-    @When("^User verifies the item listed under recent$")
+    @When("^User verifies the item listed under recent in Everything Else category$")
     public void verifyListing() {
         checkForPopUps();
         appiumLibrary.clickOnMobileElement(welcomeScreen.getTab());
@@ -60,9 +60,9 @@ public class ProductListingSteps {
         if (!appiumLibrary.isElementPresentOnScreen(appiumLibrary.getElementByText("Successfully listed!"))) {
             appiumLibrary.pressBack();
         }
+
         if (appiumLibrary.isElementPresentOnScreen(appiumLibrary.getElementByText("Successfully listed!"))) {
             appiumLibrary.clickOnMobileElement(welcomeScreen.getSuccessfullListedClose());
-
 
         }
 
